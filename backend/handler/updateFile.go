@@ -48,7 +48,7 @@ func UpdateFile(db *sql.DB) http.HandlerFunc {
 		w.Header().Set("Content-Type", "application/json")
 		err = json.NewEncoder(w).Encode(map[string]any{
 			"Success": true,
-			"Message": "The file has been stored in the DB",
+			"Message": "The file has been updated in the DB",
 		})
 		if err != nil {
 			log.Println(err.Error())

@@ -39,7 +39,7 @@ func main() {
 
 	srv := &http.Server{
 		Handler:      handler,
-		Addr:         "localhost:8001",
+		Addr:         "0.0.0.0:8001",
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 10 * time.Second,
 		IdleTimeout:  15 * time.Second,
